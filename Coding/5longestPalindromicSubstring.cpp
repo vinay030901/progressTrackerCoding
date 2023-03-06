@@ -9,6 +9,7 @@ public:
         int n = s.length();
         vector<vector<bool>> dp(n, vector<bool>(n, false));
         int start = 0, len = 1;
+
         for (int i = 0; i < n; i++)
             dp[i][i] = true;
         for (int i = n - 1; i >= 0; i--)
